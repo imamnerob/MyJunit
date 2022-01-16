@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">22.618s</div>
+<div class="counter">23.605s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,94 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="fillupForm"></a>
-<h3 class="failures">fillupForm</h3>
-<span class="code">
-<pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;submit&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (890,576) because another element &lt;iframe id=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot; name=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot;&gt; obscures it
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-O6THEL9', ip: '192.168.31.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [80503b6d-64c5-4a7a-b410-245b30933e32, clickElement {id=d1634721-85e5-4a2b-916a-d7d2f7804ea7}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220106144528, moz:debuggerAddress: localhost:64358, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 6708, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64358/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (80503b6d-64c5-4a7a-b410-245b30933e32)] -&gt; id: submit]
-Session ID: 80503b6d-64c5-4a7a-b410-245b30933e32
-	at java.base@17.0.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@17.0.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base@17.0.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@17.0.1/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base@17.0.1/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at app//MyJunit.fillupForm(MyJunit.java:61)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at app//org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -159,26 +78,26 @@ Session ID: 80503b6d-64c5-4a7a-b410-245b30933e32
 </tr>
 </thead>
 <tr>
-<td class="failures">fillupForm</td>
-<td class="failures">22.618s</td>
-<td class="failures">failed</td>
+<td class="success">doubleClickButton</td>
+<td class="success">23.605s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1642356327167	geckodriver	INFO	Listening on 127.0.0.1:50145
-1642356327552	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--headed&quot; &quot;--remote-debugging-port&quot; &quot;64358&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofile3XNrMJ&quot;
-1642356331759	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofile3XNrMJ\\search.json.mozlz4&quot;, (void 0)))
-DevTools listening on ws://localhost:64358/devtools/browser/a4d7a7c9-0d15-4f49-881d-2892ef70b62b
-1642356337261	Marionette	INFO	Listening on port 61157
-1642356337597	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-Jan 17, 2022 12:05:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+1642359284177	geckodriver	INFO	Listening on 127.0.0.1:55988
+1642359284868	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--headed&quot; &quot;--remote-debugging-port&quot; &quot;49700&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileIJQ6Wx&quot;
+1642359290326	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileIJQ6Wx\\search.json.mozlz4&quot;, (void 0)))
+DevTools listening on ws://localhost:49700/devtools/browser/0bc4be84-57a4-42f0-a02f-d9037dc276a4
+1642359297645	Marionette	INFO	Listening on port 63212
+1642359298259	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 17, 2022 12:54:58 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -191,7 +110,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at Jan 17, 2022, 12:05:49 AM</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at Jan 17, 2022, 12:55:07 AM</p>
 </div>
 </div>
 </body>

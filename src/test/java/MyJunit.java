@@ -5,13 +5,16 @@ import org.junit.Test;
 import org.junit.internal.JUnitSystem;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Sleeper;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
 import java.time.Duration;
 
 public class MyJunit {
@@ -61,5 +64,13 @@ public class MyJunit {
         driver.findElement(By.id("submit")).click();
 
     }
+    @Test
+    public void doubleClickButton(){
+        driver.get("https://demoqa.com/buttons");
+        WebElement doubleClickBtnElement= driver.findElement(By.id("doubleClickBtn"));
+        Actions action = new Actions(driver);
+        action.doubleClick(doubleClickBtnElement).perform();
 
+
+        }
 }
