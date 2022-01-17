@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.internal.JUnitSystem;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,6 +20,7 @@ import java.time.Duration;
 
 public class MyJunit {
     WebDriver driver;
+    WebDriverWait wait;
 
 
     @Before
@@ -43,24 +45,34 @@ public class MyJunit {
     public void finishTest(){
        // driver.close();
     }
+
 @Test
     public void checkifElementExists(){
-        driver.get("https://demoqa.com");
-      Boolean status=driver.findElement(By.className("banner-image")).isDisplayed();
-      Assert.assertTrue (status);
-    //wait= new WebDriverWait(driver, Duration.ofSeconds(40));
-    //Boolean status = wait.until(ExpectedConditions.elementToBeClickable(By.className("banner-image"))) .isDisplay();
-    //Assert.assertTrue(status);
+        try{
+            driver.get("https://demoqa.com");
+            //Boolean status=driver.findElement(By.className("banner-image")).isDisplayed();
+            //Assert.assertTrue (status);
+           
+            wait= new WebDriverWait(driver, Duration.ofSeconds(40));
+            Boolean status = wait.until(ExpectedConditions.elementToBeClickable(By.className("banner-image"))).isDisplayed();
+            Assert.assertTrue(status);
+        }
+        catch(Exception e){
+
+        }
 
 
 
     }
+   
     @Test
     public void fillupForm(){
         driver.get("https://demoqa.com/text-box");
         driver.findElement(By.id("userName")).sendKeys("Md.Nerob");
         driver.findElement(By.id("userEmail")).sendKeys("imamnerob@gmail.com");
         driver.findElement(By.id("currentAddress")).sendKeys("House-21, Road-31, Sector-07, Uttara-1230.");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,600)", "");
         driver.findElement(By.id("submit")).click();
 
     }

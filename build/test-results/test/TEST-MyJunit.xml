@@ -1,19 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyJunit" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-16T18:54:42" hostname="DESKTOP-O6THEL9" time="23.605">
+<testsuite name="MyJunit" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-01-17T06:11:15" hostname="DESKTOP-O6THEL9" time="85.017">
   <properties/>
-  <testcase name="doubleClickButton" classname="MyJunit" time="23.605"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="checkifElementExists" classname="MyJunit" time="22.389"/>
+  <testcase name="fillupForm" classname="MyJunit" time="21.12"/>
+  <testcase name="doubleClickButton" classname="MyJunit" time="17.712"/>
+  <testcase name="getTitle" classname="MyJunit" time="23.796"/>
+  <system-out><![CDATA[ToolsQA
+]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1642359284177	geckodriver	INFO	Listening on 127.0.0.1:55988
-1642359284868	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "49700" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileIJQ6Wx"
-1642359290326	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileIJQ6Wx\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:49700/devtools/browser/0bc4be84-57a4-42f0-a02f-d9037dc276a4
-1642359297645	Marionette	INFO	Listening on port 63212
-1642359298259	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-Jan 17, 2022 12:54:58 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+1642399877460	geckodriver	INFO	Listening on 127.0.0.1:63952
+1642399878024	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "57733" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilezLy6Nf"
+1642399883134	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilezLy6Nf\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57733/devtools/browser/f72eb4b2-23b6-4f95-aaa2-daab0c78b081
+1642399890012	Marionette	INFO	Listening on port 52391
+1642399890154	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 17, 2022 12:11:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ze6spFYAGmeX0SVs4uO-WfgikXQwH0dcHguaiLf8sa4.js line 1 > eval line 4736 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ze6spFYAGmeX0SVs4uO-WfgikXQwH0dcHguaiLf8sa4.js line 1 > eval line 1279 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1642399899586	geckodriver	INFO	Listening on 127.0.0.1:62268
+1642399899658	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "49573" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileh5j3Ej"
+1642399904516	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileh5j3Ej\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49573/devtools/browser/bb233169-c25e-45e2-b1b3-bd8699b97237
+1642399910736	Marionette	INFO	Listening on port 53348
+1642399911276	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 17, 2022 12:11:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ze6spFYAGmeX0SVs4uO-WfgikXQwH0dcHguaiLf8sa4.js line 1 > eval line 1902 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ze6spFYAGmeX0SVs4uO-WfgikXQwH0dcHguaiLf8sa4.js line 1 > eval line 2548 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1642399921023	geckodriver	INFO	Listening on 127.0.0.1:60577
+1642399921096	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "56871" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileIiDYEC"
+1642399924776	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileIiDYEC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56871/devtools/browser/b10064b8-9cba-4a01-8018-cb77224a7f91
+1642399929442	Marionette	INFO	Listening on port 54531
+1642399929545	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 17, 2022 12:12:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ze6spFYAGmeX0SVs4uO-WfgikXQwH0dcHguaiLf8sa4.js line 1 > eval line 2608 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1642399936951	geckodriver	INFO	Listening on 127.0.0.1:51972
+1642399937038	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headed" "--remote-debugging-port" "55063" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilebJPwfz"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ze6spFYAGmeX0SVs4uO-WfgikXQwH0dcHguaiLf8sa4.js line 1 > eval line 1878 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1642399942251	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilebJPwfz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55063/devtools/browser/083e1f87-98cc-41c8-83a4-360a87d76f62
+1642399950512	Marionette	INFO	Listening on port 54794
+1642399951003	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jan 17, 2022 12:12:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ze6spFYAGmeX0SVs4uO-WfgikXQwH0dcHguaiLf8sa4.js line 1 > eval line 4703 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 ]]></system-err>
 </testsuite>
