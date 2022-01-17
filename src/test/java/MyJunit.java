@@ -17,6 +17,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
 import java.time.Duration;
+import java.util.List;
+
+import static java.lang.Thread.sleep;
 
 public class MyJunit {
     WebDriver driver;
@@ -85,4 +88,36 @@ public class MyJunit {
 
 
         }
-}
+     @Test
+    public void clickOnMultipleButon(){
+        driver.get("https://demoqa.com/buttons");
+        Actions action = new Actions(driver);
+        List<WebElement> list= driver.findElements(By.cssSelector("button"));
+        action.doubleClick(list.get(1)).perform();
+        String text= driver.findElement(By.id("doubleClickMessage")).getText();
+        Assert.assertTrue(text.contains("You have done a double click"));
+
+        action.contextClick(list.get(2)).perform();
+        String text2= driver.findElement(By.id("rightClickMessage")).getText();
+        Assert.assertTrue(text2.contains("You have done a right click"));
+
+        list.get(3).click();
+        String text3= driver.findElement(By.id("dynamicClickMessage")).getText();
+        Assert.assertTrue(text3.contains("You have done a dynamic click"));
+
+    }
+    @Test
+    public void handleAlerts() throws InterruptedException {
+        driver.get("https://demoqa.com/alerts");
+        driver.findElement(By.id(("alertButton"))).click();
+        driver.switchTo().alert().accept();
+        //driver.switchTo().alert().dismiss();
+        driver.findElement(By.id(("promtButton"))).click();
+        driver.switchTo().alert().sendKeys("Nerob");
+        sleep(2000);
+        driver.switchTo().alert().accept();
+        String text = driver.findElement(By.id("promptResult")).getText();
+        Assert.assertTrue(text.contains("Nerob"));
+    }
+
+    }
